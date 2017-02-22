@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="5.0" prefWidth="615.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkgfinal.UserAccessController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="10.0" prefWidth="214.0" />
+      <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="131.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="240.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints prefHeight="40.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+    <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+    <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView id="eeImageView" fx:id="eeImageView" fitHeight="271.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true" GridPane.rowSpan="7" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </GridPane.margin>
+      </ImageView>
+      <Label text="Employee ID" GridPane.columnIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label text="Employee Name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <TextField id="employeIDTextField" fx:id="employeeIDTextField" editable="false" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.valignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></TextField>
+      <TextField id="employeeNameTextField" fx:id="employeeNameTextField" editable="false" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></TextField>
+      <Label id="employeeTitleLabel" text="Employee Title" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label id="employeeRegionLabel" text="Employee Region" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField id="employeeTitleTextField" fx:id="employeeTitleTextField" editable="false" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField id="employeeRegionTextField" fx:id="employeeRegionTextField" editable="false" style="-fx-border-color: black;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <ImageView id="qrImageView" fx:id="qrImageView" fitHeight="173.0" fitWidth="237.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>

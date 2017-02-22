@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Final.jnlp">
+  <information>
+    <title>Final</title>
+    <vendor>kgordon-bercich</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Final.jar" size="1557566" download="eager" />
+    <jar href="lib\core-3.3.0-javadoc.jar" size="1073633" download="eager" />
+    <jar href="lib\core-3.3.0.jar" size="541078" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.40-bin.jar" size="990927" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Final" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pkgfinal.Final"  name="Final" />
+  <update check="always"/>
+</jnlp>
